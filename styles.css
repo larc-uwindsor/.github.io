@@ -1205,3 +1205,34 @@ h2 {
         text-align: left;
     }
 }
+
+.callout {
+    text-align: left;
+}
+
+.callout .membership-copy {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 650px;
+}
+
+.callout-note {
+    left: auto;
+    right: 5vw;
+    transform: none;
+}
+
+@media (max-width: 720px) {
+    .callout-note {
+        left: 6vw;
+        right: auto;
+    }
+}
+
+.hero-foot {
+    bottom: auto;
+    left: auto;
+    margin-top: 50px;
+    position: relative;
+    right: auto;
+}
