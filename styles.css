@@ -1242,6 +1242,39 @@ h2 {
     font-size: .8rem;
 }
 
+.site-socials {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+
+.social-link {
+    align-items: center;
+    border: 1px solid var(--line);
+    display: inline-flex;
+    height: 38px;
+    justify-content: center;
+    transition: background .2s ease, color .2s ease;
+    width: 38px;
+}
+
+.social-link svg {
+    fill: currentColor;
+    height: 17px;
+    width: 17px;
+}
+
+.social-link:first-child svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+}
+
+.social-link:hover {
+    background: var(--lime);
+    color: var(--ink);
+}
+
 .large-copy {
     font-size: clamp(1.25rem, 2vw, 2rem);
 }
@@ -1292,6 +1325,12 @@ h2 {
 
 .stats-page {
     background: var(--paper);
+}
+
+@media (min-width: 721px) {
+    .page-hero {
+        min-height: calc(100vh - 86px);
+    }
 }
 
 .hero-actions {
