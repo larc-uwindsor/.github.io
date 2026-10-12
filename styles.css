@@ -889,9 +889,9 @@ h2 {
     background: var(--ink);
     color: var(--paper);
     display: flex;
-    min-height: 570px;
+    min-height: 430px;
     overflow: hidden;
-    padding: 120px 5vw 70px;
+    padding: 90px 5vw 110px;
     position: relative;
 }
 
@@ -1019,8 +1019,8 @@ h2 {
     }
 
     .page-hero {
-        min-height: 520px;
-        padding: 90px 6vw 55px;
+        min-height: 380px;
+        padding: 70px 6vw 65px;
     }
 
     .page-body {
@@ -1235,4 +1235,85 @@ h2 {
     margin-top: 50px;
     position: relative;
     right: auto;
+}
+
+.site-nav {
+    align-items: center;
+    font-size: .8rem;
+}
+
+.large-copy {
+    font-size: clamp(1.25rem, 2vw, 2rem);
+}
+
+@media (max-width: 720px) {
+    .site-nav {
+        align-items: stretch;
+    }
+}
+
+.work,
+.work-page,
+.competitions {
+    background: var(--paper);
+    color: var(--ink);
+}
+
+.work .section-label,
+.work-page .section-label,
+.competitions .section-label,
+.work .section-heading p,
+.work-page .page-content>p:not(.large-copy),
+.work-item p,
+.project-grid p,
+.competition-note {
+    color: var(--muted);
+}
+
+.work-list,
+.work-item,
+.project-grid,
+.project-grid article {
+    border-color: var(--line);
+}
+
+.competition-note {
+    border-color: var(--line);
+}
+
+.competitions h2 em {
+    color: var(--coral);
+}
+
+.work-page,
+.sponsor-page {
+    background: var(--lime);
+}
+
+.stats-page {
+    background: var(--paper);
+}
+
+.hero-actions {
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.hero-actions .button-link {
+    height: 56px;
+    white-space: nowrap;
+}
+
+.hero-actions .button-outline {
+    transform: translateY(10px);
+}
+
+@media (max-width: 720px) {
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .button-link {
+        width: 100%;
+    }
 }
