@@ -1043,7 +1043,7 @@ h2 {
 
 /* Logo palette refinements */
 .site-header {
-    background: rgba(11, 24, 56, .96);
+    background: var(--ink);
 }
 
 .wordmark small {
