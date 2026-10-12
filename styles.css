@@ -718,8 +718,15 @@ h2 {
 
 .wordmark img {
     filter: brightness(0) invert(1);
-    height: 42px;
-    width: 120px;
+    height: 105px;
+    transform: translateX(-10px);
+    width: 180px;
+}
+
+.wordmark {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .nav-package {
@@ -1048,6 +1055,7 @@ h2 {
 
 .wordmark small {
     color: #d9d2bc;
+    transform: translateY(-20px);
 }
 
 .hero-overlay {
