@@ -107,6 +107,8 @@ a {
 }
 
 .eyebrow {
+    background: var(--ink);
+    border-top: 4px solid var(--lime);
     margin: 0 0 38px;
 }
 
@@ -131,7 +133,6 @@ h1 {
     max-width: 850px;
 }
 
-h1 em,
 h2 em {
     color: var(--coral);
     font-style: normal;
@@ -1331,6 +1332,32 @@ h2 {
     .site-footer>a:last-child {
         justify-self: auto;
     }
+}
+
+.site-footer {
+    background: var(--ink);
+    border-top: 4px solid var(--lime);
+    color: var(--paper);
+}
+
+.site-footer img {
+    filter: brightness(0) invert(1);
+}
+
+.site-footer>span:nth-of-type(2) {
+    color: #c4ccda;
+}
+
+.site-footer>span:nth-of-type(2) a {
+    color: var(--lime);
+}
+
+.site-footer .social-link {
+    border-color: rgba(213, 182, 101, .65);
+}
+
+.site-footer>a:last-child {
+    color: var(--lime);
 }
 
 .large-copy {
