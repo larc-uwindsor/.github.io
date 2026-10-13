@@ -1277,10 +1277,10 @@ h2 {
 
 .site-footer {
     align-items: center;
-    display: grid;
-    gap: 18px 28px;
-    grid-template-columns: auto auto minmax(220px, 1fr) auto auto;
-    padding: 40px 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 64px 5vw;
     font-size: .75rem;
 }
 
@@ -1295,16 +1295,16 @@ h2 {
 }
 
 .site-footer>span:nth-of-type(2) {
-    max-width: 360px;
-    text-align: left;
+    max-width: 520px;
+    text-align: center;
 }
 
 .site-footer .site-socials {
-    justify-self: end;
+    justify-self: auto;
 }
 
 .site-footer>a:last-child {
-    justify-self: end;
+    justify-self: auto;
     white-space: nowrap;
 }
 
@@ -1320,11 +1320,11 @@ h2 {
 
 @media (max-width: 720px) {
     .site-footer {
-        align-items: flex-start;
+        align-items: center;
         display: flex;
         flex-direction: column;
-        gap: 16px;
-        padding: 32px 6vw;
+        gap: 20px;
+        padding: 48px 6vw;
     }
 
     .site-footer .site-socials,
