@@ -275,7 +275,7 @@ h2 {
 }
 
 .work .section-label {
-    color: #9daaa3;
+    color: var(--ink);
 }
 
 .work-content {
@@ -293,7 +293,7 @@ h2 {
 }
 
 .section-heading p {
-    color: #9daaa3;
+    color: var(--ink);
     font-family: var(--mono);
     font-size: .7rem;
     margin-bottom: 90px;
@@ -330,7 +330,7 @@ h2 {
 }
 
 .work-item p {
-    color: #9daaa3;
+    color: var(--ink);
     line-height: 1.5;
     margin: 0;
     max-width: 520px;
@@ -523,7 +523,7 @@ h2 {
 }
 
 .wordmark small {
-    color: #b6c0ba;
+    color: var(--paper);
 }
 
 .site-nav a:hover {
@@ -569,14 +569,14 @@ h2 {
 }
 
 .hero-intro {
-    color: #e1e4dc;
+    color: var(--paper);
     font-size: 1.2rem;
     max-width: 410px;
 }
 
 .hero .eyebrow,
 .hero-foot {
-    color: #d8ddd6;
+    color: var(--paper);
 }
 
 .button-link {
@@ -956,7 +956,7 @@ h2 {
 
 .work-page .section-label,
 .work-page .page-content>p:not(.large-copy) {
-    color: #9daaa3;
+    color: var(--ink);
 }
 
 .project-grid {
@@ -986,7 +986,7 @@ h2 {
 }
 
 .project-grid p {
-    color: #9daaa3;
+    color: var(--ink);
     line-height: 1.6;
 }
 
@@ -1075,7 +1075,7 @@ h2 {
 .section-heading p,
 .work-item p,
 .project-grid p {
-    color: #a8b0c2;
+    color: var(--ink);
 }
 
 .sponsors,
@@ -1149,7 +1149,7 @@ h2 {
 }
 
 .competitions .section-label {
-    color: #a8b0c2;
+    color: var(--ink);
 }
 
 .competitions h2 em {
@@ -1157,8 +1157,8 @@ h2 {
 }
 
 .competition-note {
-    border-top: 1px solid rgba(247, 245, 239, .3);
-    color: #a8b0c2;
+    border-top: 1px solid var(--line);
+    color: var(--ink);
     font-size: 1.2rem;
     line-height: 1.6;
     margin-top: 55px;
@@ -1345,7 +1345,7 @@ h2 {
 }
 
 .site-footer>span:nth-of-type(2) {
-    color: #c4ccda;
+    color: var(--paper);
 }
 
 .site-footer>span:nth-of-type(2) a {
@@ -1358,6 +1358,25 @@ h2 {
 
 .site-footer>a:last-child {
     color: var(--lime);
+}
+
+.section-label span:first-child,
+.work h2 em,
+.work-page h2 em,
+.stats-page h2 em,
+.sponsor-page h2 em,
+.competitions h2 em,
+.work .item-number,
+.work-page .item-number {
+    color: var(--ink);
+}
+
+.work,
+.work-page,
+.stats-page,
+.sponsor-page,
+.competitions {
+    color: var(--ink);
 }
 
 .large-copy {
@@ -1416,6 +1435,15 @@ h2 {
     .page-hero {
         min-height: calc(100vh - 86px);
     }
+}
+
+.work-page,
+.work-page .large-copy,
+.work-page .section-label,
+.work-page .section-heading p,
+.work-page .project-grid p,
+.work-page .item-number {
+    color: var(--ink);
 }
 
 .hero-actions {
